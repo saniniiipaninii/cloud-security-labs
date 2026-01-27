@@ -10,6 +10,8 @@ Analyze Azure AD sign-in logs to understand authentication failures and demonstr
 
 ## Steps Taken
 1. Created a test Azure AD user (`signinlabuser`).
+<img width="481" height="349" alt="New User" src="https://github.com/user-attachments/assets/91035400-475d-46ee-a4eb-1c4a9cb28b08" />
+<img width="802" height="23" alt="signinlabuser" src="https://github.com/user-attachments/assets/4fe2e76b-7873-4153-8c49-9b94b451e7e2" />
 2. Generated multiple failed login attempts using incorrect credentials in a private browser session.
 3. Reviewed Azure AD sign-in logs as an administrator:
    - Filtered by user (`signinlabuser`)
@@ -22,6 +24,7 @@ Analyze Azure AD sign-in logs to understand authentication failures and demonstr
 <img width="940" height="379" alt="Directory Logs" src="https://github.com/user-attachments/assets/c0f8e3d0-f9bf-4fd4-938c-04219c1e0bf0" />
 
 5. Compared failed logins to a successful login for the same user.
+<img width="913" height="269" alt="Failed vs Success" src="https://github.com/user-attachments/assets/43ceeba0-a03b-4706-ac48-be35ff8040d4" />
 
 ## Results
 - All failed login attempts were captured with detailed metadata.
@@ -33,8 +36,3 @@ Analyze Azure AD sign-in logs to understand authentication failures and demonstr
 - Sign-in logs are critical for identity-based threat detection.
 - Monitoring failed login attempts is a key part of cloud security operations.
 - Understanding log metadata helps identify patterns and potential security incidents.
-
-## Screenshots
-- `screenshots/failed_logins.png` — filtered failed login attempts
-- `screenshots/successful_login.png` — successful login for comparison
-<img width="913" height="269" alt="Failed vs Success" src="https://github.com/user-attachments/assets/43ceeba0-a03b-4706-ac48-be35ff8040d4" />
