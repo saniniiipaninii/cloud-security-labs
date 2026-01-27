@@ -12,6 +12,8 @@ Analyze Azure AD sign-in logs to understand authentication failures and demonstr
 1. Created a test Azure AD user (`signinlabuser`).
 <img width="481" height="349" alt="New User" src="https://github.com/user-attachments/assets/91035400-475d-46ee-a4eb-1c4a9cb28b08" />
 <img width="802" height="23" alt="signinlabuser" src="https://github.com/user-attachments/assets/4fe2e76b-7873-4153-8c49-9b94b451e7e2" />
+
+
 2. Generated multiple failed login attempts using incorrect credentials in a private browser session.
 3. Reviewed Azure AD sign-in logs as an administrator:
    - Filtered by user (`signinlabuser`)
