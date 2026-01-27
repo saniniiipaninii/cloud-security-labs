@@ -1,4 +1,4 @@
-# Lab 3: Azure Sign-In Logs & Failed Login Analysis
+# Lab 2: Azure Sign-In Logs & Failed Login Analysis
 
 ## Goal
 Analyze Azure AD sign-in logs to understand authentication failures and demonstrate how failed logins can indicate potential security threats.
