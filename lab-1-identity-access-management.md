@@ -31,8 +31,14 @@ Roles were assigned using Azure RBAC to enforce the principle of least privilege
 ## Testing & Observations
 
 ### 1. Role-Based Access Control (RBAC)
-- The **Lab User** with the Reader role could view users and directory information but was restricted from making any changes.  
+- The **Lab User** with the Reader role could view users and directory information but was restricted from making any changes.
+<img width="1920" height="1080" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/77c486bb-0a8f-4bb2-bfb6-f749fddae7f9" />
+
+
 - The **Lab Admin** with the Global Administrator role had unrestricted access, including the ability to modify users, roles, and authentication settings.
+<img width="1920" height="1080" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/dc4b48d8-68bc-447a-b9a8-f92ebd4af350" />
+
+<img width="1920" height="1080" alt="Screenshot (57)" src="https://github.com/user-attachments/assets/146bf5af-6d2b-4083-a7ce-cf85520642c8" />
 
 **Observation:**  
 RBAC effectively limited the actions of low-privileged users while granting full control to privileged accounts.
@@ -40,7 +46,9 @@ RBAC effectively limited the actions of low-privileged users while granting full
 ---
 
 ### 2. Multi-Factor Authentication (MFA) Enforcement
-- MFA was enabled on the **Lab Admin** account, requiring a second authentication factor during login.  
+- MFA was enabled on the **Lab Admin** account, requiring a second authentication factor during login.
+<img width="1920" height="1080" alt="Screenshot (58)" src="https://github.com/user-attachments/assets/f3fe5e38-60ea-44f5-9368-2b62624c1bb3" />
+
 - An attempt was made to disable MFA on the Global Administrator account to simulate a security misconfiguration. However, Azure Entra ID enforces MFA on all Global Administrators by default and prevents it from being removed.
 
 This behavior highlights Microsoft’s built-in protections for high-risk accounts and reinforces the importance of MFA for privileged identities. To demonstrate the risks associated with disabled MFA, a secondary high-privilege test account could be used with MFA disabled to simulate potential compromise scenarios.
